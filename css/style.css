@@ -1,0 +1,321 @@
+<html>
+  <head>
+  <style>
+
+.header .container .navbar {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.header .navbar .Home img {
+  float: left;
+  width: 130px;
+  height: 90px;
+  margin-top: 30px;
+}
+
+.header .navbar .Menu {
+  float: right;
+  margin-top: 50px;
+}
+
+.header .navbar .Menu ul li{
+         display: inline-block;
+         margin: 0 10px;
+         z-index: -2;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.acceuil {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.acceuil p {
+  font-family: "Annie Use Your Telescope";
+  font-size: 42px;
+  font-style: bold;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.acceuil p0 {
+  font-family: "Annie Use Your Telescope";
+  font-size: 42px;
+  font-style: bold;
+  font-variant: normal;
+  font-weight: lighter;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.acceuil h {
+  font-family: "Cabin Sketch";
+  font-size: 72px;
+  font-style: bold;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 120px;
+  color: #ffffff;
+}
+
+.contacts .container .navbar {
+width: 1000px;
+position: relative;
+margin: 0 auto;
+margin-bottom: 50px;
+}
+
+.contacts .navbar .descr p {
+  float: left;
+  width: 400px;
+  height: 90px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.contacts .navbar .liste {
+  float: right;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 220px;
+}
+
+.contacts .navbar .liste ul li{
+         display: inline-block;
+         margin: 15px 10px;
+         z-index: -2;
+}
+
+.liste a:hover {
+  padding: 49px 10px 0;
+  border-radius: 20%;
+  background-color: hsla(9, 100%, 64%, 0.5);
+  z-index: 3;
+}
+
+.closer {
+  text-align: center;
+  padding: 10px 0 3px;
+  border-top: 1px groove;
+  border-color: #e03a36;
+}
+
+.closer li {
+  margin: 15px;
+}
+
+.portfolio {
+margin-top: 1000px;
+width: 1100px;
+margin: auto;
+}
+
+.portfolio li {
+  font-family: "Londrina Sketch";
+  font-size: 60px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 60px;
+  color: #787878;
+  margin: 150px;
+  display: inline-block;
+  text-align: center;
+}
+
+.portfolio a:hover {
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  text-shadow:
+    0 0 5px #ff002b,
+    0 0 10px #ff002b,
+    0 0 20px #ff002b,
+    0 0 40px #ff0000,
+    0 0 80px #ff0000,
+    0 0 90px #ff0000,
+    0 0 100px #ff0000,
+    0 0 150px #ff0000;
+  z-index: 3;
+}
+
+.about .container .navbar {
+width: 1200px;
+position: relative;
+margin: 30px auto;
+margin-bottom: 100px;
+}
+
+.about .navbar .me p {
+  float: left;
+  width: 800px;
+  height: 90px;
+  margin: auto;
+  margin-bottom: 100px
+  text-align: center;
+}
+
+.Menu a:link {
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: invisible;
+}
+
+
+.Menu a:hover
+{
+            color: hsla(9, 100%, 64%, 0.5);
+            background-color: transparent;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-image: image(stars, twinking);
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  z-index: -1;
+
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:-2;
+}
+
+.twinkling
+{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:-1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+
+
+
+
+#quote {
+  quotes: "“" "”";
+}
+
+
+head
+{
+  color: black;
+  image-orientation: left;
+}
+
+body
+{
+  background-color: #000000;
+  background-position: center;
+}
+
+
+.main h1, h2, h3
+{  text-align: center;
+   font-family: "Cabin Sketch";
+   font-size: 72px;
+   font-style: bold;
+   font-variant: normal;
+   font-weight: 700;
+   line-height: 80px;
+   color: #ffffff;
+}
+
+p2, p3, p, li
+{
+             font-family: "Annie Use Your Telescope";
+             font-size: 36px;
+             font-style: normal;
+             font-variant: normal;
+             font-weight: 400;
+             line-height: 50px;
+             color: #ffffff;
+}
+
+li { font-family: "Annie Use Your Telescope";
+      font-size: 20px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 20px;
+      color: #ffffff;
+      display: inline-block;
+      margin-top: 10px;
+}
+
+a:link
+{
+         color: #787878;
+         background-color: transparent;
+         text-decoration: none;
+}
+
+
+a:hover
+{
+            color: hsla(9, 100%, 64%, 0.5);
+            background-color: transparent;
+            text-decoration: underline;
+}
+
+#footer
+{
+         font-family: antique_olive;
+         font-size: 11px;
+         text-align: center;
+         color: white;
+         padding: 20px 50px 0 50px;
+         border-top: 0.5px groove;
+         border-color: #e03a36;
+}
+
+
+</style>
+<head>
