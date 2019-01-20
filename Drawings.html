@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title> Photography </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css\style.css" />
+  <link rel="stylesheet" type="text/css" href="css\normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css\stars_background.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700"/>
+
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 100px auto;
+  }
+
+  header .photos
+  {
+    font-family: "Cabin Sketch";
+    font-size: 400px;
+    color: #ffffff;
+    margin: 200px auto 400px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 120px;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 30px;
+  }
+
+  .column img {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .column img:hover {
+    opacity: 1;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .container {
+    position: relative;
+    display: none;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 200px;
+    cursor: pointer;
+  }
+
+  </style>
+  </head>
+
+<body>
+
+  <!-- The four columns -->
+<header>
+  <div class="photos"> <h> PHOTOGRAPHY </h>
+  </div>
+</header>
+
+  <div class="row">
+    <div class="column">
+      <img src="images\drawings\001.jpg" alt="01" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\002.jpg" alt="02" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\003.jpg" alt="03" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\004.jpg" alt="04" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="images\drawings\005.jpg" alt="05" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\006.jpg" alt="06" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\007.jpg" alt="07" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\008.jpg" alt="08" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="images\drawings\009.jpg" alt="09" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\010.jpg" alt="10" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\011.jpg" alt="11" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\012.jpg" alt="12" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="images\drawings\013.jpg" alt="13" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\014.jpg" alt="14" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\015.jpg" alt="15" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\016.jpg" alt="16" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="images\drawings\017.jpg" alt="17" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\018.jpg" alt="18" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\019.jpg" alt="19" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\danseuse.jpg" alt="20" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="images\drawings\flying_shoes.jpg" alt="21" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\guardian_of_life.jpg" alt="22" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\mère_des_mers.jpg" alt="23" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\naturally.jpg" alt="24" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="images\drawings\filo_rosso.jpg" alt="21" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\waiting.jpg" alt="22" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\christams_card.jpg" alt="23" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\drawings\christmas_elf.jpg" alt="24" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:80%">
+    <div id="imgtext"></div>
+  </div>
+
+  <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+
+</html>

@@ -4,25 +4,28 @@
 
 .header .container .navbar {
   width: 1150px;
-  margin: 0 auto;
+  margin: 0 50px 30px;
+  position: fixed;
 }
 
 .header .navbar .Home img {
   float: left;
   width: 130px;
   height: 90px;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-left: 150px;
 }
 
 .header .navbar .Menu {
   float: right;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-right: 150px;
 }
 
 .header .navbar .Menu ul li{
          display: inline-block;
          margin: 0 10px;
-         z-index: -2;
+         z-index: 3;
 }
 
 .clearfix {
@@ -112,19 +115,20 @@ margin-bottom: 50px;
 
 .portfolio {
 margin-top: 1000px;
-width: 1100px;
+width: 1200px;
 margin: auto;
+margin-bottom: 120px;
 }
 
 .portfolio li {
   font-family: "Londrina Sketch";
-  font-size: 60px;
+  font-size: 56px;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
   line-height: 60px;
   color: #787878;
-  margin: 150px;
+  margin: 90px;
   display: inline-block;
   text-align: center;
 }
@@ -274,7 +278,7 @@ a:visited {
 
 #footer
 {
-         font-family: antique_olive;
+         font-family: "antique olive";
          font-size: 11px;
          text-align: center;
          color: white;
@@ -282,7 +286,6 @@ a:visited {
          border-top: 0.5px groove;
          border-color: #e03a36;
 }
-
 
 </style>
 </head>
