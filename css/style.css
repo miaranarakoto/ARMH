@@ -22,10 +22,50 @@
   margin-right: 150px;
 }
 
-.header .navbar .Menu ul li{
+.header .navbar .Menu .category{
          display: inline-block;
+         position: relative;
          margin: 0 10px;
          z-index: 3;
+}
+
+.category .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.category:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-family: "Cabin Sketch";
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-shadow:
+    0 0 5px #ff002b,
+    0 0 10px #ff002b,
+    0 0 20px #ff002b,
+    0 0 40px #ff0000,
+    0 0 80px #ff0000,
+    0 0 90px #ff0000,
+    0 0 100px #ff0000,
+    0 0 150px #ff0000;
+  text-align: center;
 }
 
 .clearfix {
@@ -34,12 +74,13 @@
 
 .acceuil {
   text-align: center;
-  margin-top: 120px;
+  margin-top: 170px;
+  margin-bottom: 170px;
 }
 
 .acceuil p {
   font-family: "Annie Use Your Telescope";
-  font-size: 42px;
+  font-size: 70px;
   font-style: bold;
   font-variant: normal;
   font-weight: 700;
@@ -49,7 +90,7 @@
 
 .acceuil p0 {
   font-family: "Annie Use Your Telescope";
-  font-size: 42px;
+  font-size: 50px;
   font-style: bold;
   font-variant: normal;
   font-weight: lighter;
@@ -59,7 +100,7 @@
 
 .acceuil h {
   font-family: "Cabin Sketch";
-  font-size: 72px;
+  font-size: 100px;
   font-style: bold;
   font-variant: normal;
   font-weight: 700;
@@ -114,15 +155,15 @@ margin-bottom: 50px;
 }
 
 .portfolio {
-margin-top: 1000px;
+margin-top: 1100px;
 width: 1200px;
 margin: auto;
-margin-bottom: 120px;
+margin-bottom: 250px;
 }
 
 .portfolio li {
   font-family: "Londrina Sketch";
-  font-size: 56px;
+  font-size: 60px;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
@@ -153,17 +194,22 @@ margin-bottom: 120px;
 .about .container .navbar {
 width: 1200px;
 position: relative;
-margin: 30px auto;
-margin-bottom: 100px;
+margin: 200px auto 250px;
+padding: 200px auto 200px;
 }
 
 .about .navbar .me p {
   float: left;
   width: 800px;
   height: 90px;
-  margin: auto;
-  margin-bottom: 100px
+  margin-top: 50px;
+  margin-bottom: 250px;
   text-align: center;
+}
+
+.about .navbar .photo {
+  position: static;
+  margin: 140px auto 30px;
 }
 
 .Menu a:link {
@@ -257,7 +303,7 @@ a:visited {
 #Portfolio {
      text-align: center;
      font-family: "Cabin Sketch";
-     font-size: 52px;
+     font-size: 100px;
      font-style: bold;
      font-variant: normal;
      font-weight: 700;
@@ -268,7 +314,7 @@ a:visited {
 #Contact {
      text-align: center;
      font-family: "Cabin Sketch";
-     font-size: 72px;
+     font-size: 100px;
      font-style: bold;
      font-variant: normal;
      font-weight: 700;
@@ -279,12 +325,13 @@ a:visited {
 #footer
 {
          font-family: "antique olive";
-         font-size: 11px;
+         font-size: 14px;
          text-align: center;
          color: white;
          padding: 20px 50px 0 50px;
          border-top: 0.5px groove;
          border-color: #e03a36;
+         margin-bottom: 20px;
 }
 
 </style>

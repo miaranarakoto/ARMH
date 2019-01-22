@@ -20,7 +20,7 @@
   }
 
   body {
-    margin: 50px auto;
+    margin: 0 auto;
   }
 
   header .drawings
@@ -28,25 +28,38 @@
     font-family: "Lady Fiesta";
     font-size: 200px;
     color: #ffffff;
-    margin: 100px auto 100px;
+    margin: 0 auto 100px;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 120px;
+    height: 200px;
   }
 
   .column {
-    float: left;
-    width: 25%;
-    padding: 30px;
+    -ms-flex: 25%; /* IE10 */
+   flex: 25%;
+   max-width: 25%;
+   padding: 0 4px;
   }
 
   .column img {
+    border-radius: 10px;
     opacity: 0.6;
     cursor: pointer;
+    margin-top: 10px;
+    vertical-align: middle;
   }
 
   .column img:hover {
     opacity: 1;
+  }
+
+  .row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
   }
 
   .row:after {
@@ -64,9 +77,74 @@
     position: absolute;
     top: 10px;
     right: 15px;
-    color: white;
+    color: black;
     font-size: 50px;
     cursor: pointer;
+  }
+
+.expand {
+margin: 0;
+display: block;
+width: 80%;
+max-width: 700px;
+}
+
+#caption {
+margin: auto;
+display: block;
+width: 60%;
+max-width: 100%;
+text-align: center;
+color: #ccc;
+padding: 10px 0;
+height: 150px;
+}
+
+/* Add Animation */
+.expand, #caption {
+-webkit-animation-name: zoom;
+-webkit-animation-duration: 0.6s;
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+from {-webkit-transform:scale(0)}
+to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+from {transform:scale(0)}
+to {transform:scale(1)}
+}
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 40%;
+    max-width: 30%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+  #footer
+  {
+           font-family: "antique olive";
+           font-size: 11px;
+           text-align: center;
+           color: white;
+           padding: 20px 50px 0 50px;
+           border-top: 0.5px groove;
+           border-color: #e03a36;
   }
 
   </style>
@@ -76,113 +154,50 @@
 
   <!-- The four columns -->
 <header>
-  <div class="drawings"> <h> Drawings </h>
-  </div>
+      <div class="drawings"> <h> Drawings </h> </div>
 </header>
 
   <div class="row">
     <div class="column">
       <img src="images\drawings\001.jpg" alt="01" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
       <img src="images\drawings\002.jpg" alt="02" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
       <img src="images\drawings\003.jpg" alt="03" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
       <img src="images\drawings\004.jpg" alt="04" style="width:100%" onclick="myFunction(this);">
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img src="images\drawings\005.jpg" alt="05" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images\drawings\006.jpg" alt="06" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images\drawings\007.jpg" alt="07" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images\drawings\008.jpg" alt="08" style="width:100%" onclick="myFunction(this);">
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img src="images\drawings\009.jpg" alt="09" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images\drawings\010.jpg" alt="10" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images\drawings\011.jpg" alt="11" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images\drawings\012.jpg" alt="12" style="width:100%" onclick="myFunction(this);">
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img src="images\drawings\013.jpg" alt="13" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images\drawings\014.jpg" alt="14" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images\drawings\015.jpg" alt="15" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
+      <img src="images\drawings\flying shoes.jpg" alt="21" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\018.jpg" alt="18" style="width:100%" onclick="myFunction(this);">
       <img src="images\drawings\016.jpg" alt="16" style="width:100%" onclick="myFunction(this);">
     </div>
-  </div>
 
-  <div class="row">
     <div class="column">
-      <img src="images\drawings\017.jpg" alt="17" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\007.jpg" alt="07" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\008.jpg" alt="08" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\009.jpg" alt="09" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\naturally.jpg" alt="24" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\006.jpg" alt="06" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\guardian of life.jpg" alt="17" style="width:100%" onclick="myFunction(this);">
     </div>
-    <div class="column">
-      <img src="images\drawings\018.jpg" alt="18" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images\drawings\019.jpg" alt="19" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images\drawings\danseuse.jpg" alt="20" style="width:100%" onclick="myFunction(this);">
-    </div>
-  </div>
 
-  <div class="row">
     <div class="column">
-      <img src="images\drawings\flying shoes.jpg" alt="21" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\christmas card.jpg" alt="27" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\012.jpg" alt="12" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\013.jpg" alt="13" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\014.jpg" alt="14" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\waiting.jpg" alt="26" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\010.jpg" alt="10" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\017.jpg" alt="22" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\005.jpg" alt="28" style="width:100%" onclick="myFunction(this);">
     </div>
-    <div class="column">
-      <img src="images\drawings\guardian of life.jpg" alt="22" style="width:100%" onclick="myFunction(this);">
-    </div>
+
     <div class="column">
       <img src="images\drawings\mère des mers.jpg" alt="23" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\011.jpg" alt="11" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\christmas elf.jpg" alt="28" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\015.jpg" alt="15" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\filo rosso.jpg" alt="25" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\019.jpg" alt="19" style="width:100%" onclick="myFunction(this);">
+      <img src="images\drawings\madness.jpg" alt="05" style="width:100%" onclick="myFunction(this);">
     </div>
-    <div class="column">
-      <img src="images\drawings\naturally.jpg" alt="24" style="width:100%" onclick="myFunction(this);">
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="column">
-      <img src="images\drawings\filo rosso.jpg" alt="21" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images\drawings\waiting.jpg" alt="22" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images\drawings\christmas card.jpg" alt="23" style="width:100%" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="images\drawings\christmas elf.jpg" alt="24" style="width:100%" onclick="myFunction(this);">
-    </div>
   </div>
 
   <div class="container">
@@ -192,13 +207,17 @@
   </div>
 
   <script>
+
   function myFunction(imgs) {
     var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
     expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
     expandImg.parentElement.style.display = "block";
   }
   </script>
 
+  <div id="footer">”
+          ©Copyright 2050 by ARMH. All right reserved.
+  </div>
+
+</body>
 </html>

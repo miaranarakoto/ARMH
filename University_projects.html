@@ -1,38 +1,161 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<head>
+  <title> University Projects </title>
 
-    <link rel="stylesheet" type="text/css" href="css\style.css" />
-    <link rel="stylesheet" type="text/css" href="css\normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css\stars_background.css" />
-    <link rel="stylesheet" type="text/css" href="css\.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Cabin+Sketch">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina+Sketch">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="stylesheet" type="text/css" href="css\style.css" />
+  <link rel="stylesheet" type="text/css" href="css\normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css\stars_background.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700"/>
+  <link rel="stylesheet" type="font/css" href="fonts\lady_fiesta\lady fiesta.TFF"/>
 
-    <title> UNIVERSITY PROJECTS </title>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
 
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0 auto;
+  }
+
+  header .photos
+  {
+    font-family: "Lady Fiesta";
+    font-size: 200px;
+    color: #ffffff;
+    margin: 0 auto 200px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 120px;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 30px;
+  }
+
+  .column img {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .column img:hover {
+    opacity: 1;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .container {
+    position: relative;
+    display: none;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 200px;
+    cursor: pointer;
+  }
+
+  #footer
+  {
+           font-family: "antique olive";
+           font-size: 11px;
+           text-align: center;
+           color: white;
+           padding: 20px 50px 0 50px;
+           border-top: 0.5px groove;
+           border-color: #e03a36;
+  }
+
+  </style>
   </head>
 
-  <body>
-<div class="university">
-  
-  <h1> UNIVERSITY PROJECTS</h1>
+<body>
 
-    <img src="images\university projects\17-18_C1_ES03C_E-Book.gif" alt="E-book">
-    <img src="images\university projects\17-18_C1_Es04_F1.jpg" alt="F1">
-    <img src="images\university projects\17-18_C1_Es04_F2.jpg" alt="F2">
-    <img src="images\university projects\17-18_C1_Es04_F3.jpg" alt="F3">
-    <img src="images\university projects\17-18_C1_Es04_F4.jpg" alt="F4">
-    <img src="images\university projects\17-18_C1_Es04_F5.jpg" alt="F5">
-    <img src="images\university projects\17-18_C1_Es04_F6.jpg" alt="F6">
-    <img src="images\university projects\17-18_C1_Es04_F7.jpg" alt="F7">
-    <img src="images\university projects\poster 1.jpg" alt="poster_1">
-    <img src="images\university projects\poster 2.jpg" alt="poster_2">
-    <img src="images\university projects\poster 3.jpg" alt="poster_3">
+  <!-- The four columns -->
+<header>
+  <div class="photos"> <h> UNIVERSITY PROJECTS </h>
+  </div>
+</header>
 
-</div>
-  </body>
+  <div class="row">
+    <div class="column">
+      <img src="images\university projects\17-18_C1_Es03A.jpg" alt="01" style="width:100%" onclick="currentSlide(1);">
+    </div>
+    <div class="column">
+      <img src="images\university projects\17-18_C1_Es04_F1.jpg" alt="02" style="width:100%" onclick="currentSlide(2);">
+    </div>
+    <div class="column">
+      <img src="images\university projects\17-18_C1_Es04_F2.jpg" alt="03" style="width:100%" onclick="currentSlide(3);">
+    </div>
+    <div class="column">
+      <img src="images\university projects\17-18_C1_Es04_F3.jpg" alt="04" style="width:100%" onclick="currentSlide(4);">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="images\university projects\17-18_C1_Es04_F4.jpg" alt="05" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\university projects\17-18_C1_Es04_F5.jpg" alt="06" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\university projects\17-18_C1_Es04_F6.jpg" alt="07" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\university projects\17-18_C1_Es04_F7.jpg" alt="08" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="images\university projects\poster 1.jpg" alt="09" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\university projects\poster 2.jpg" alt="10" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\university projects\poster 3.jpg" alt="11" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images\university projects\17-18_C1_ES03C_E-Book.gif" alt="12" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:80%">
+    <div id="imgtext"></div>
+  </div>
+
+  <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+
+  <div id="footer">”
+          ©Copyright 2050 by ARMH. All right reserved.
+  </div>
+
+</body>
+
 </html>
