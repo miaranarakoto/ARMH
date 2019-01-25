@@ -5,14 +5,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="css\style.css" />
-    <link rel="stylesheet" type="text/css" href="css\normalize.css" />
     <link rel="stylesheet" type="text/css" href="css\stars_background.css" />
+    <link rel="stylesheet" type="text/css" href="css\normalize.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700"/>
     <link rel="stylesheet" type="font/css" href="fonts\lady_fiesta\lady fiesta.TFF"/>
 
     <div class="stars"></div>
     <div class="twinkling"></div>
+
 
     <style>
     * {
@@ -32,6 +32,11 @@
       text-align: center;
       font-weight: normal;
       line-height: 120px;
+    }
+
+    .Home img{
+      width: 20%;
+      margin: 2% 40%;
     }
 
     .column {
@@ -118,13 +123,26 @@
       cursor: pointer;
     }
 
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 46.5%;
+      z-index: 2;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 15px;
+    }
+
     #footer
     {
              font-family: "antique olive";
              font-size: 11px;
              text-align: center;
              color: white;
-             padding: 20px 50px 0 50px;
+             margin-top: 5%;
+             padding: 20px;
              border-top: 0.5px groove;
              border-color: #e03a36;
     }
@@ -138,7 +156,15 @@
 <header>
     <div class="photos"> <h> PHOTOGRAPHY </h>
     </div>
+
+    <div class="Home">
+       <a href="index.html"> <img src="images\assets\signature.png" alt="Home"/>
+       </a>
+    </div>
 </header>
+
+  <img src="images\assets\rocket_f.png" onclick="topFunction()" id="myBtn" title="Go to top"/>
+
 
     <div class="row">
       <div class="column">
@@ -237,12 +263,33 @@
     </div>
 
     <script>
+
+//expand image
     function myFunction(imgs) {
       var expandImg = document.getElementById("expandedImg");
       expandImg.src = imgs.src;
       expandImg.parentElement.style.display = "block";
     }
+
+//button scrollTop
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
     </script>
+
+    <script src="js\Jquery.js"> </script>
+
 
     <div id="footer">”
             ©Copyright 2050 by ARMH. All right reserved.
