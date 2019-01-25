@@ -1,7 +1,7 @@
 <html>
   <head>
   <style>
-@media screen and (max-width: 610px) {
+
 .header .container .navbar {
   width: 80%;
   margin: 0 50px 30px;
@@ -10,22 +10,23 @@
 
 .header .navbar .Home img {
   float: left;
-  width: 8%;
-  height: 90px;
-  margin-top: 10px;
-  margin-left: 150px;
+  width: 10%;
+  height: 7vw;
+  margin-top: 1vw;
+  margin-left: 15vw;
 }
 
 .header .navbar .Menu {
   float: right;
-  margin-top: 20px;
-  margin-right: 150px;
+  margin-top: 2vw;
+  margin-right: 15vw;
 }
 
 .header .navbar .Menu .category{
+         width: 4vw;
          display: inline-block;
          position: relative;
-         margin: 0 10px;
+         margin: 0 1.5vw;
          z-index: 12;
 }
 
@@ -38,18 +39,18 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: #000000;
 }
 
 .category:hover .overlay {
-  opacity: 1;
+  opacity: 2;
 }
 
 .text {
   font-family: "Cabin Sketch";
   color: #fff;
-  font-size: 20px;
+  font-size: 2vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -80,44 +81,43 @@
 
 .acceuil p {
   font-family: "Annie Use Your Telescope";
-  font-size: 70px;
+  font-size: 6vw;
   font-style: bold;
   font-variant: normal;
   font-weight: 700;
-  line-height: 45px;
+  line-height: 4vw;
   color: #ffffff;
 }
 
 .acceuil p0 {
   font-family: "Annie Use Your Telescope";
-  font-size: 50px;
+  font-size: 3vw;
   font-style: bold;
   font-variant: normal;
   font-weight: lighter;
-  line-height: 45px;
+  line-height: 2vw;
   color: #ffffff;
 }
 
 .acceuil h {
   font-family: "Cabin Sketch";
-  font-size: 100px;
+  font-size: 8vw;
   font-style: bold;
   font-variant: normal;
   font-weight: 700;
-  line-height: 120px;
+  line-height: 7vw;
   color: #ffffff;
 }
 
 .contacts .container .navbar {
-width: 80%;
+width: 70%;
 position: relative;
-margin: 0 auto;
-margin-bottom: 50px;
+margin: 10% auto;
 }
 
 .contacts .navbar .descr p {
   float: left;
-  width: 40%;
+  width: 30%;
   height: 90px;
   margin-top: 25px;
   text-align: center;
@@ -125,19 +125,20 @@ margin-bottom: 50px;
 
 .contacts .navbar .liste {
   float: right;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  margin-right: 4vw;
   width: 25%;
 }
 
-.contacts .navbar .liste ul li{
+.contacts .navbar .liste li{
          display: inline-block;
-         margin: 15px 10px;
+         margin: 1vw 1vw;
          z-index: -2;
 }
 
 .liste a:hover {
-  padding: 49px 10px 0;
+  padding: 5vw 1vw 0;
   border-radius: 20%;
   background-color: hsla(9, 100%, 64%, 0.5);
   z-index: 3;
@@ -146,7 +147,7 @@ margin-bottom: 50px;
 .closer {
   text-align: center;
   padding: 10px 0 3px;
-  border-top: 1px groove;
+  border-top: 0.1vw groove;
   border-color: #e03a36;
 }
 
@@ -155,21 +156,21 @@ margin-bottom: 50px;
 }
 
 .portfolio {
-margin-top: 1100px;
-width: 1200px;
-margin: auto;
-margin-bottom: 250px;
+margin: 10vw;
+width: 100%;
+margin-left: auto;
+margin-bottom: 20%;
 }
 
 .portfolio li {
   font-family: "Londrina Sketch";
-  font-size: 60px;
+  font-size: 5vw;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
-  line-height: 60px;
+  line-height: 6vw;
   color: #787878;
-  margin: 90px;
+  margin-left: 10vw;
   display: inline-block;
   text-align: center;
 }
@@ -194,21 +195,22 @@ margin-bottom: 250px;
 .about .container .navbar {
 width: 90%;
 position: relative;
-margin-left: 100px;
-padding: 200px auto 200px;
+margin-left: 10%;
+padding: 20% auto 20%;
 }
 
 .about .navbar .me p {
   float: left;
   width: 60%;
   height: 90px;
-  margin-top: 50px;
-  margin-bottom: 250px;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 
 .about .navbar img {
+  width: 30vw;
   position: relative;
-  margin: 50px 0 20px 30px;
+  margin: 3vw 0 2vw 3vw;
 }
 
 .Menu a:link {
@@ -242,23 +244,23 @@ body
 p2, p3, p, li
 {
              font-family: "Annie Use Your Telescope";
-             font-size: 36px;
+             font-size: 2.5vw;
              font-style: normal;
              font-variant: normal;
              font-weight: 400;
-             line-height: 50px;
+             line-height: 4vw;
              color: #ffffff;
 }
 
 li { font-family: "Annie Use Your Telescope";
-      font-size: 20px;
+      font-size: 1.5vw;
       font-style: normal;
       font-variant: normal;
       font-weight: 400;
-      line-height: 20px;
+      line-height: 3vw;
       color: #ffffff;
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 2vw;
 }
 
 a:link
@@ -291,47 +293,47 @@ a:visited {
 #About_me {
      text-align: center;
      font-family: "Cabin Sketch";
-     font-size: 70px;
+     font-size: 6vw;
      font-style: bold;
      font-variant: normal;
      font-weight: 700;
-     line-height: 80px;
+     line-height: 8vw;
      color: #ffffff;
 }
 
 #Portfolio {
      text-align: center;
      font-family: "Cabin Sketch";
-     font-size: 90px;
+     font-size: 6vw;
      font-style: bold;
      font-variant: normal;
      font-weight: 700;
-     line-height: 80px;
+     line-height: 8vw;
      color: #ffffff;
 }
 
 #Contact {
      text-align: center;
      font-family: "Cabin Sketch";
-     font-size: 110px;
+     font-size: 6vw;
      font-style: bold;
      font-variant: normal;
      font-weight: 700;
-     line-height: 80px;
+     line-height: 8vw;
      color: #ffffff;
 }
 
 #footer
 {
          font-family: "antique olive";
-         font-size: 14px;
+         font-size: 1vw;
          text-align: center;
          color: white;
-         padding: 20px 50px 0 50px;
+         padding: 2vw 5vw 0 5vw;
          border-top: 0.5px groove;
          border-color: #e03a36;
-         margin-bottom: 20px;
+         margin-bottom: 2vw;
 }
-}
+
 </style>
 </head>
