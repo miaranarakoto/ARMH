@@ -81,7 +81,7 @@
 
 .acceuil p {
   font-family: "Annie Use Your Telescope";
-  font-size: 6vw;
+  font-size: 5vw;
   font-style: bold;
   font-variant: normal;
   font-weight: 700;
@@ -101,7 +101,7 @@
 
 .acceuil h {
   font-family: "Cabin Sketch";
-  font-size: 8vw;
+  font-size: 7vw;
   font-style: bold;
   font-variant: normal;
   font-weight: 700;
@@ -193,7 +193,7 @@ margin-bottom: 20%;
 }
 
 .about .container .navbar {
-width: 90%;
+width: 80%;
 position: relative;
 margin-left: 10%;
 padding: 20% auto 20%;
@@ -208,9 +208,9 @@ padding: 20% auto 20%;
 }
 
 .about .navbar img {
-  width: 30vw;
+  width: 25vw;
   position: relative;
-  margin: 3vw 0 2vw 3vw;
+  margin: 7vw 0 8vw 5vw;
 }
 
 .Menu a:link {
@@ -293,18 +293,18 @@ a:visited {
 #About_me {
      text-align: center;
      font-family: "Cabin Sketch";
-     font-size: 6vw;
+     font-size: 5vw;
      font-style: bold;
      font-variant: normal;
      font-weight: 700;
-     line-height: 8vw;
+     line-height: 6vw;
      color: #ffffff;
 }
 
 #Portfolio {
      text-align: center;
      font-family: "Cabin Sketch";
-     font-size: 6vw;
+     font-size: 5vw;
      font-style: bold;
      font-variant: normal;
      font-weight: 700;
