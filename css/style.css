@@ -2,81 +2,38 @@
   <head>
   <style>
 
-.header .container .navbar {
-  width: 80%;
-  margin: 0 50px 30px;
-  position: fixed;
-}
-
-.header .navbar .Home img {
-  float: left;
-  width: 10%;
-  height: 7vw;
-  margin-top: 1vw;
-  margin-left: 15vw;
-}
-
-.header .navbar .Menu {
-  float: right;
-  margin-top: 2vw;
-  margin-right: 15vw;
-}
-
-.header .navbar .Menu .category{
-         width: 4vw;
-         display: inline-block;
-         position: relative;
-         margin: 0 1.5vw;
-         z-index: 12;
-}
-
-.category .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #000000;
-}
-
-.category:hover .overlay {
-  opacity: 2;
-}
-
-.text {
-  font-family: "Cabin Sketch";
-  color: #fff;
-  font-size: 2vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-shadow:
-    0 0 5px #ff002b,
-    0 0 10px #ff002b,
-    0 0 20px #ff002b,
-    0 0 40px #ff0000,
-    0 0 80px #ff0000,
-    0 0 90px #ff0000,
-    0 0 100px #ff0000,
-    0 0 150px #ff0000;
-  text-align: center;
-}
-
-.clearfix {
-  clear: both;
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .acceuil {
   text-align: center;
-  margin: 170px auto 170px;
+  margin: 80px auto 80px;
 
+}
+
+.acceuil h0 {
+  font-family: "Cabin Sketch";
+  font-size: 7vw;
+  font-style: bold;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 7vw;
+  color: #ffffff;
+}
+
+.acceuil p0 {
+  font-family: "Londrina Sketch";
+  font-size: 5vw;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 6vw;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
 }
 
 .acceuil p {
@@ -89,95 +46,41 @@
   color: #ffffff;
 }
 
-.acceuil p0 {
-  font-family: "Annie Use Your Telescope";
-  font-size: 3vw;
-  font-style: bold;
-  font-variant: normal;
-  font-weight: lighter;
-  line-height: 2vw;
-  color: #ffffff;
-}
-
-.acceuil h {
-  font-family: "Cabin Sketch";
-  font-size: 7vw;
-  font-style: bold;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 7vw;
-  color: #ffffff;
-}
-
-.contacts .container .navbar {
-width: 70%;
-position: relative;
-margin: 10% auto;
-}
-
-.contacts .navbar .descr p {
-  float: left;
-  width: 30%;
-  height: 90px;
-  margin-top: 25px;
-  text-align: center;
-}
-
-.contacts .navbar .liste {
-  float: right;
-  margin-top: 3vw;
-  margin-bottom: 3vw;
-  margin-right: 4vw;
-  width: 25%;
-}
-
-.contacts .navbar .liste li{
-         display: inline-block;
-         margin: 1vw 1vw;
-         z-index: -2;
-}
-
-.liste a:hover {
-  padding: 5vw 1vw 0;
-  border-radius: 20%;
-  background-color: hsla(9, 100%, 64%, 0.5);
-  z-index: 3;
-}
-
-.closer {
-  text-align: center;
-  padding: 10px 0 3px;
-  border-top: 0.1vw groove;
-  border-color: #e03a36;
-}
-
-.closer li {
-  margin: 15px;
-}
-
-.portfolio {
-margin: 10vw;
-width: 100%;
-margin-left: auto;
-margin-bottom: 20%;
-}
-
-.portfolio li {
+h1, a {
   font-family: "Londrina Sketch";
   font-size: 5vw;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
   line-height: 6vw;
-  color: #787878;
-  margin-left: 10vw;
+  color: #ffffff;
   display: inline-block;
   text-align: center;
 }
 
-.portfolio a:hover {
+h2 {
+  color: transparent;
+}
+.photos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+
+a:link
+{
+         color: #cc3333;
+         background-color: transparent;
+         text-decoration: none;
+         z-index: 3;
+}
+
+a:hover {
   background-color: transparent;
-  text-transform: uppercase;
   text-decoration: none;
   color: #fff;
   text-shadow:
@@ -192,135 +95,20 @@ margin-bottom: 20%;
   z-index: 3;
 }
 
-.about .container .navbar {
-width: 80%;
-position: relative;
-margin-left: 10%;
-padding: 20% auto 20%;
-}
-
-.about .navbar .me p {
-  float: left;
-  width: 60%;
-  height: 90px;
-  margin-top: 30px;
-  margin-bottom: 100px;
-}
-
-.about .navbar img {
-  width: 25vw;
-  position: relative;
-  margin: 7vw 0 8vw 5vw;
-}
-
-.Menu a:link {
-  background-color: transparent;
-  text-decoration: none;
-  text-transform: invisible;
-}
-
-
-.Menu a:hover
-{
-            color: hsla(9, 100%, 64%, 0.5);
-            background-color: transparent;
-
-}
-
-head
-{
-  color: black;
-  image-orientation: left;
-}
-
-body
-{
-  background-color: #000000;
-  background-position: center;
-}
-
-
-
-p2, p3, p, li
-{
-             font-family: "Annie Use Your Telescope";
-             font-size: 2.5vw;
-             font-style: normal;
-             font-variant: normal;
-             font-weight: 400;
-             line-height: 4vw;
-             color: #ffffff;
-}
-
-li { font-family: "Annie Use Your Telescope";
-      font-size: 1.5vw;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 400;
-      line-height: 3vw;
-      color: #ffffff;
-      display: inline-block;
-      margin-top: 2vw;
-}
-
-a:link
-{
-         color: #787878;
-         background-color: transparent;
-         text-decoration: none;
-         z-index: 3;
-}
-
-li a:hover
-{
-            color: hsla(9, 100%, 64%, 0.5);
-            background-color: transparent;
-            text-decoration: underline;
-            z-index: 4;
-}
-
-a:visited {
-  color: #787878;
-  background-color: transparent;
-  text-decoration: none;
-  z-index: 3;
-}
-
 #quote {
   quotes: "“" "”";
 }
 
-#About_me {
-     text-align: center;
-     font-family: "Cabin Sketch";
-     font-size: 5vw;
-     font-style: bold;
-     font-variant: normal;
-     font-weight: 700;
-     line-height: 6vw;
-     color: #ffffff;
+#content {
+  position: absolute;
 }
 
-#Portfolio {
-     text-align: center;
-     font-family: "Cabin Sketch";
-     font-size: 5vw;
-     font-style: bold;
-     font-variant: normal;
-     font-weight: 700;
-     line-height: 8vw;
-     color: #ffffff;
+.img_parallax {
+  position: fixed;
 }
 
-#Contact {
-     text-align: center;
-     font-family: "Cabin Sketch";
-     font-size: 6vw;
-     font-style: bold;
-     font-variant: normal;
-     font-weight: 700;
-     line-height: 8vw;
-     color: #ffffff;
+#layer_1 {
+  background: url("images/assets/cloud1.jpg") no-repeat 0px 200px;
 }
 
 #footer
